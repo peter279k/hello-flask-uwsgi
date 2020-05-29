@@ -8,9 +8,11 @@ Using following command to build a Docker image:
 docker build -t hello-flask-uwsgi . --no-cache
 ```
 
-# Run Docker container
+# Run Docker Container
 Using following command to run Docker image as a container:
 
 ```Bash
 docker run --name=hello-flask-uwsgi -d -p 6000:80 hello-flask-uwsgi
 ```
+
+It will run a Docker container with Nginx, uWSGI and Flask on port `6000`.
